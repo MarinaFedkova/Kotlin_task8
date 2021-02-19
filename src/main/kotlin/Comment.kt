@@ -3,7 +3,6 @@ data class Comment (
     val idOfNote: Int? = null,
     val text: String? = null,
     var deleted: Boolean = false
+) {
 
-
-){
 }

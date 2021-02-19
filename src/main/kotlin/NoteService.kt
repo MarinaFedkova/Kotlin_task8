@@ -1,22 +1,14 @@
-interface NoteService<N, C> {
+interface NoteService<E> {
 
-    fun addNote(n: N): N
+    fun add(entity: E): E
 
-    fun createComment(c: C, i: Int): C
+    fun delete(id: Int)
 
-    fun deleteNote(i: Int)
+    fun edit(id: Int, entity: E): Boolean
 
-    fun deleteComment(i: Int): Boolean
+    fun read(id: Int): List<E>
 
-    fun editNote(i: Int, n: N): Boolean
+    fun getById(i: Int): E
 
-    fun editComment(i: Int, c: C): Boolean
-
-    fun getNotes(i: Int)
-
-    fun getNoteById(i: Int)
-
-    fun getComments(i: Int)
-
-    fun restoreComment(i: Int): Boolean
+    fun restore(i: Int)
 }

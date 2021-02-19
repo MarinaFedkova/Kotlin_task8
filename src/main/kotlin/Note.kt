@@ -6,7 +6,9 @@ data class Note (
     val date: Int? = null,
     val comments: Int? = null,
     val readComments: Int? = null,
-    val viewUrl: String? = null
+    val viewUrl: String? = null,
+    var deleted: Boolean = false
         ) {
+
 
 }
