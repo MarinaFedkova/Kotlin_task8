@@ -1,4 +1,4 @@
-object CommentServiceImpl : NoteService<Comment> {
+object CommentServiceImpl : NoteAndCommentService<Comment> {
     private var comments = mutableListOf(Comment())
 
     override fun add(comment: Comment): Comment {

@@ -1,4 +1,4 @@
-interface NoteService<E> {
+interface NoteAndCommentService<E> {
 
     fun add(entity: E): E
 

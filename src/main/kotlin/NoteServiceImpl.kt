@@ -1,4 +1,4 @@
-object NoteServiceImpl : NoteService<Note> {
+object NoteServiceImpl : NoteAndCommentService<Note> {
 
     private var notes = mutableListOf(Note())
     private var noteId: Int = 1

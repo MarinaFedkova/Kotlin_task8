@@ -1,7 +1,7 @@
 import org.junit.Test
 import org.junit.Assert.*
 
-class NoteServiceImplTest {
+class NoteAndCommentServiceImplTest {
 
     @Test
     fun addNote() {
